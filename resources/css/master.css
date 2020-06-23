@@ -180,7 +180,7 @@ h1::before{
 
 }
 
-@media screen and (min-width: 960px){
+@media screen and (min-width: 1000px) and (-webkit-max-device-pixel-ratio: 2){
 
 
   .item{
