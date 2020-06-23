@@ -23,7 +23,7 @@ i:hover{
   color: #ecfbe9;
 }
 .fa.fa-bars{
-  font-size: 2.5rem;
+  font-size: 2.0rem;
 }
 
 .menu{
@@ -145,7 +145,7 @@ i:hover{
   position: relative;
   color: #404040;
   display: block;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
 
 }
 h1::before{
@@ -224,5 +224,14 @@ h1::before{
 
   h1{
     font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 730px){
+  h1{
+  font-size: 2.5rem;
+  }
+.fa.fa-bars{
+  font-size: 2.5rem;
   }
 }
