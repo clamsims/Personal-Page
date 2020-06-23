@@ -168,7 +168,7 @@ h1::before{
   top: -10px;
 }
 
-.contactinfo{
+.contactmain{
   display: flex;
   width: 100vw;
   justify-content: center;
@@ -177,13 +177,31 @@ h1::before{
   flex-direction: column;
 }
 
+
+
 /* contact page*/
-.contactinfo h2{
+.contactmain h2{
   text-transform: uppercase;
   position: relative;
   text-align: center;
 
 }
+
+.flexmain{
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  text-align: center;
+  flex-direction: column;
+}
+
+.flexmain h2{
+  display: inline-block;
+  padding: 0% 5% 0% 5%;
+}
+
 
 @media screen and (min-width: 1000px) and (-webkit-max-device-pixel-ratio: 2){
 
