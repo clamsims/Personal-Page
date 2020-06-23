@@ -201,6 +201,7 @@ h1::before{
       flex-direction: row;
       flex-wrap: wrap;
       padding-right: 10%;
+      font-size: 1rem;
   }
   .menu li:last-child{
     display: none;
