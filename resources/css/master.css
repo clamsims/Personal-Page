@@ -1,0 +1,144 @@
+body{
+  margin: 0;
+  box-sizing: border-box;
+  padding:0;
+  font-family: helvetica;
+}
+
+
+nav{
+  width: 100%;
+}
+
+i{
+  color: #ffc8ce;
+  font-size: 20px;
+}
+i:hover{
+  color: #ecfbe9;
+}
+
+
+.menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 10%;
+}
+
+.menubutton{
+  order: 1;
+  display: block;
+
+}
+
+
+.menu li a{
+  text-decoration: none;
+  color: #404040;
+  display: inline-block;
+}
+
+.item{
+  order: 2;
+  text-align: center;
+  display: none;
+  list-style-type: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menuon .item{
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+}
+
+
+
+#about:hover::before{
+  content: 'ABOUT';
+  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: #ffc8ce;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 5px;
+  z-index: -1;
+}
+
+#contact:hover::before{
+  content: 'CONTACT';
+  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: #ffc8ce;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 5px;
+  z-index: -1;
+}
+
+#CV:hover::before{
+  content: 'CV';
+  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: #ffc8ce;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 5px;
+  z-index: -1;
+}
+
+/* logo decorations */
+
+  h1{
+  font-family: helvetica;
+  text-transform: uppercase;
+  position: relative;
+  color: #404040;
+  display: block;
+
+}
+h1::before{
+  content:'CALLUM SIMS';
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffc8ce;
+  -webkit-text-fill-color: transparent;
+  z-index: -2;
+  position: absolute;
+  top: 10px;
+}
+
+.name-logo::before{
+  content:'CALLUM SIMS';
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ecfbe9;
+  -webkit-text-fill-color: transparent;
+  z-index: -1;
+  position: absolute;
+  top: -10px;
+}
+
+@media screen and (min-width: 960px){
+
+
+  .item{
+    display: inline-block;
+    position: relative;
+    padding-right:15px;
+    text-align: right;
+  }
+  .menu{
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-right: 10%;
+  }
+  .menu li:last-child{
+    display: none;
+  }
+}
