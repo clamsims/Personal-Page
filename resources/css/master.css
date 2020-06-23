@@ -195,6 +195,7 @@ h1::before{
   height: 75vh;
   text-align: center;
   flex-direction: column;
+  padding-top: 2em;
 }
 
 .flexmain h2{
