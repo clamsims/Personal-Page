@@ -17,12 +17,14 @@ nav{
 
 i{
   color: #ffc8ce;
-  font-size: 20px;
+
 }
 i:hover{
   color: #ecfbe9;
 }
-
+.fa.fa-bars{
+  font-size: 3rem;
+}
 
 .menu{
     list-style-type: none;
@@ -54,6 +56,7 @@ i:hover{
   list-style-type: none;
   font-weight: bold;
   text-transform: uppercase;
+  font-size: 2rem;
 }
 
 .menuon .item{
@@ -142,6 +145,7 @@ i:hover{
   position: relative;
   color: #404040;
   display: block;
+  font-size: 3rem;
 
 }
 h1::before{
@@ -206,5 +210,13 @@ h1::before{
     position: relative;
     margin-top: 0px;
     width: auto;
+  }
+
+  i{
+    color: #ffc8ce;
+    font-size: 20px;
+  }
+  i:hover{
+    color: #ecfbe9;
   }
 }
