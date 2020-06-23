@@ -90,6 +90,15 @@ i:hover{
   z-index: -1;
 }
 
+#home:hover::before{
+  content: 'HOME';
+  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: #ffc8ce;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 5px;
+  z-index: -1;
+}
 /* logo decorations */
 
   h1{
@@ -140,5 +149,11 @@ h1::before{
   }
   .menu li:last-child{
     display: none;
+  }
+  .menuon .item{
+    display: inline-block;
+    position: relative;
+    margin-top: 0px;
+    width: auto;
   }
 }
