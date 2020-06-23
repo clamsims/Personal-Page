@@ -201,8 +201,26 @@ h1::before{
 .flexmain h2{
   display: inline-block;
   padding: 0% 5% 0% 5%;
+  font-size: 1.3em;
 }
 
+.obvious{
+  position: relative;
+}
+
+  .obvious::before{
+    content:'here';
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffc8ce;
+    -webkit-text-fill-color: transparent;
+    z-index: -2;
+    position: absolute;
+    top: 5px;
+}
+
+.footer{
+  height: 1em;
+}
 
 @media screen and (min-width: 1000px) and (-webkit-max-device-pixel-ratio: 2){
 
