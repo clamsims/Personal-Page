@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  border:0;
+}
+
 body{
   margin: 0;
   box-sizing: border-box;
@@ -13,18 +19,51 @@ a{
 
 nav{
   width: 100vw;
+  padding-top: 1em;
+  z-index: 5;
 }
 
+header{
+  z-index: 5;
+}
+
+
 i{
-  color: #ffc8ce;
+  color:#404040;
 
 }
 i:hover{
-  color: #ecfbe9;
+  color: #ffc8ce;
 }
 .fa.fa-bars{
   font-size: 2.0rem;
 }
+
+
+.indexbody{
+  height: 100vh;
+  width: 100vw;
+  margin:0;
+  padding:0;
+}
+
+
+.contact{
+  margin-top: 1em;
+}
+.splash{
+ height: 90vh;
+ width: 100vw;
+ display: flex;
+ align-content: center;
+ justify-content: center;
+ flex-direction: column;
+ text-align: center;
+}
+.splashtext{
+  font-size: 2em;
+}
+
 
 .menu{
     list-style-type: none;
@@ -33,7 +72,7 @@ i:hover{
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-right: 10%;
+    padding-right:1em;
 }
 
 .menubutton{
@@ -146,6 +185,7 @@ i:hover{
   color: #404040;
   display: block;
   font-size: 2.25rem;
+  padding-left: 0.5em;
 
 }
 h1::before{
@@ -189,13 +229,14 @@ h1::before{
 
 .flexmain{
   display: flex;
-  width: 100vw;
+  width: 65vw;
   justify-content: center;
   align-items: center;
   height: 75vh;
   text-align: center;
   flex-direction: column;
   padding-top: 2em;
+  margin: auto;
 }
 
 .flexmain h2{
@@ -222,6 +263,16 @@ h1::before{
   height: 1em;
 }
 
+.footwave{
+position: fixed;
+bottom:0;
+text-align: center;
+overflow: hidden;
+width: 100vw;
+margin:0;
+padding:0
+}
+
 @media screen and (min-width: 1000px) and (-webkit-max-device-pixel-ratio: 2){
 
 
@@ -232,6 +283,11 @@ h1::before{
     text-align: right;
     font-size: 1rem;
   }
+
+.flexmain{
+    width: 50vw;
+}
+
   .menu{
       list-style-type: none;
       display: flex;
@@ -241,6 +297,7 @@ h1::before{
       flex-wrap: wrap;
       padding-right: 10%;
       font-size: 1rem;
+
   }
   .menu li:last-child{
     display: none;
@@ -251,6 +308,8 @@ h1::before{
     margin-top: 0px;
     width: auto;
   }
+
+
 
   i{
     color: #ffc8ce;
