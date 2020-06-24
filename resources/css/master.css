@@ -38,7 +38,7 @@ i:hover{
 .fa.fa-bars{
   font-size: 2.0rem;
 }
-
+/*index styles*/
 
 .indexbody{
   height: 100vh;
@@ -48,9 +48,6 @@ i:hover{
 }
 
 
-.contact{
-  margin-top: 1em;
-}
 .splash{
  height: 90vh;
  width: 100vw;
@@ -64,7 +61,7 @@ i:hover{
   font-size: 2em;
 }
 
-
+/*menu styles*/
 .menu{
     list-style-type: none;
     display: flex;
@@ -106,6 +103,11 @@ i:hover{
 }
 
 
+.contact{
+  margin-top: 1em;
+}
+
+/*links decoration*/
 
 #about:hover::before{
   content: 'ABOUT';
@@ -208,6 +210,12 @@ h1::before{
   top: -10px;
 }
 
+
+
+
+
+/* contact page*/
+
 .contactmain{
   display: flex;
   width: 100vw;
@@ -217,9 +225,6 @@ h1::before{
   flex-direction: column;
 }
 
-
-
-/* contact page*/
 .contactmain h2{
   text-transform: uppercase;
   position: relative;
@@ -285,10 +290,10 @@ pointer-events: none;
     font-size: 1rem;
   }
 
-.flexmain{
-    width: 45vw;
-    font-size: 1.2em;
-}
+  .flexmain{
+      width: 45vw;
+      font-size: 1.2em;
+  }
 
   .menu{
       list-style-type: none;
@@ -311,9 +316,9 @@ pointer-events: none;
     width: auto;
   }
 
-li.item{
-  font-size: 1.3em;
-}
+  li.item{
+    font-size: 1.3em;
+  }
 
 
   i{
