@@ -270,7 +270,8 @@ text-align: center;
 overflow: hidden;
 width: 100vw;
 margin:0;
-padding:0
+padding:0;
+pointer-events: none;
 }
 
 @media screen and (min-width: 1000px) and (-webkit-max-device-pixel-ratio: 2){
