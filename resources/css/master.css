@@ -38,6 +38,25 @@ i:hover{
 .fa.fa-bars{
   font-size: 2.0rem;
 }
+
+.btn{
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #ecfbe9;
+  text-align: center;
+  border: 1px solid transparent;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+.btn:hover{
+  background-color: #ffc8ce;
+  color: rgb(249, 249, 249);
+}
+
 /*index styles*/
 
 .indexbody{
@@ -102,6 +121,9 @@ i:hover{
   margin-top: 1.5em;
 }
 
+.menuon:last-child{
+  height: 60vh;
+}
 
 .contact{
   margin-top: 1em;
@@ -111,6 +133,17 @@ i:hover{
 
 #about:hover::before{
   content: 'ABOUT';
+  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: #ffc8ce;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 5px;
+  z-index: -1;
+}
+
+
+#projects:hover::before{
+  content: 'PROJECTS';
   -webkit-text-stroke-width: 0.75px;
   -webkit-text-stroke-color: #ffc8ce;
   -webkit-text-fill-color: transparent;
@@ -274,9 +307,47 @@ bottom:0;
 text-align: center;
 overflow: hidden;
 width: 100vw;
-margin:0;
+margin:50px 0 0 0;;
 padding:0;
 pointer-events: none;
+}
+
+/* project styling*/
+
+.projectlist{
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.projectitem{
+  width: 50%;
+  padding: 15px;
+  flex-basis: 300px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectimg{
+  height: 250px;
+  width: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.projectcategory{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.projectdesc{
+
 }
 
 @media screen and (min-width: 1000px) and (-webkit-max-device-pixel-ratio: 2){
@@ -304,7 +375,6 @@ pointer-events: none;
       flex-wrap: wrap;
       padding-right: 10%;
       font-size: 1rem;
-
   }
   .menu li:last-child{
     display: none;
