@@ -11,6 +11,7 @@ body{
   font-family: helvetica;
   text-decoration: none;
   color: #404040;
+  background-color: rgb(249, 249, 249);
 }
 a{
   text-decoration: none;
@@ -45,16 +46,18 @@ i:hover{
   margin-bottom: 0;
   font-size: 22px;
   font-weight: bold;
-  background-color: #ecfbe9;
+  background-color: #ffc8ce;
   text-align: center;
   border: 1px solid transparent;
   margin-top: 20px;
   border-radius: 4px;
+  color: #404040;
 }
 
 .btn:hover{
+  color: #404040;;
   background-color: #ffc8ce;
-  color: rgb(249, 249, 249);
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
 /*index styles*/
@@ -307,7 +310,7 @@ bottom:0;
 text-align: center;
 overflow: hidden;
 width: 100vw;
-margin:50px 0 0 0;;
+margin:250px 0 0 0;;
 padding:0;
 pointer-events: none;
 }
