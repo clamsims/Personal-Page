@@ -35,6 +35,7 @@ header{
 
 i{
   color:#404040;
+  z-index: 1000;
 
 }
 i:hover{
@@ -42,6 +43,12 @@ i:hover{
 }
 .fa.fa-bars{
   font-size: 2.0rem;
+
+}
+
+.fa-bars{
+    z-index: 1000;
+    position: relative;
 }
 
 .btn{
@@ -70,7 +77,6 @@ i:hover{
 
 .splash{
  height: 90vh;
- width: 90vw;
  display: flex;
  align-content: center;
  justify-content: center;
@@ -92,40 +98,45 @@ i:hover{
     flex-wrap: wrap;
     padding-right:2em;
 }
+.menu-links{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  transform: translateY(-100%);
+  transition: transform 0.2s ease;
+  background-color: rgb(249, 249, 249);
+  text-align: center;
+  z-index: 10;
+}
 
 .menubutton{
   order: 1;
   display: block;
+  z-index: 1000
 
 }
 
-
-.menu li a{
-  text-decoration: none;
+.menu-links a{
   color: #404040;
-  display: inline-block;
-}
-
-.item{
-  order: 2;
-  text-align: center;
-  display: none;
-  list-style-type: none;
+  font-size: 2.5rem;
   font-weight: bold;
+  font-family: helvetica;
   text-transform: uppercase;
-  font-size: 2rem;
 }
 
-.menuon .item{
-  display: block;
-  width: 100%;
-  position: relative;
-  margin-top: 1.5em;
+.menu-links li{
+  padding-top: 5rem;
 }
 
-.menuon:last-child{
-  height: 60vh;
+
+.menuOn{
+  transform: translateY(0);
 }
+
+
 
 .contact{
   margin-top: 1em;
@@ -139,7 +150,7 @@ i:hover{
   -webkit-text-stroke-color: #ffc8ce;
   -webkit-text-fill-color: transparent;
   position: absolute;
-  top: 5px;
+  top: 5.5rem;
   z-index: -1;
 }
 
@@ -150,7 +161,7 @@ i:hover{
   -webkit-text-stroke-color: #ffc8ce;
   -webkit-text-fill-color: transparent;
   position: absolute;
-  top: 5px;
+  top: 13.5rem;
   z-index: -1;
 }
 
@@ -160,7 +171,7 @@ i:hover{
   -webkit-text-stroke-color: #ffc8ce;
   -webkit-text-fill-color: transparent;
   position: absolute;
-  top: 5px;
+  top: 21.25rem;
   z-index: -1;
 }
 
@@ -170,7 +181,7 @@ i:hover{
   -webkit-text-stroke-color: #ffc8ce;
   -webkit-text-fill-color: transparent;
   position: absolute;
-  top: 5px;
+  top: 29rem;
   z-index: -1;
 }
 
@@ -312,6 +323,7 @@ width: 100%;
 margin:250px 0 0 0;;
 padding:0;
 pointer-events: none;
+z-index: 11;
 }
 
 /* project styling*/
@@ -361,42 +373,12 @@ pointer-events: none;
 @media screen and (min-width: 1000px) and (-webkit-max-device-pixel-ratio: 2){
 
 
-  .item{
-    display: inline-block;
-    position: relative;
-    padding-right:15px;
-    text-align: right;
-    font-size: 1rem;
-  }
 
   .flexmain{
       width: 45vw;
       font-size: 1.2em;
   }
 
-  .menu{
-      list-style-type: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: row;
-      flex-wrap: wrap;
-      padding-right: 10%;
-      font-size: 1rem;
-  }
-  .menu li:last-child{
-    display: none;
-  }
-  .menuon .item{
-    display: inline-block;
-    position: relative;
-    margin-top: 0px;
-    width: auto;
-  }
-
-  li.item{
-    font-size: 1.3em;
-  }
 
 
   i{

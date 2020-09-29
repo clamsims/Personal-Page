@@ -1,8 +1,11 @@
-function showMenu() {
-  var x = document.getElementById("menuList");
-  if (x.className === "menu") {
-    x.className += " menuon";
-  } else {
-    x.className = "menu";
-  }
+function showMenu(){
+  document.getElementById("linkList").classList.toggle("menuOn")
 }
+
+const menuItem = document.querySelectorAll(".menuItem")
+
+menuItem.forEach(
+  function(menuItem) {
+    menuItem.addEventListener("click", showMenu)
+  }
+)
