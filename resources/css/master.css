@@ -291,7 +291,7 @@ h1::before{
   height: 65vh;
   text-align: center;
   flex-direction: column;
-  padding-top: 5em;
+  padding-top: 6.5rem;
   margin: auto;
 }
 
@@ -336,6 +336,7 @@ z-index: 11;
 .projectlist{
   margin: 0 auto;
   display: flex;
+  width: 80vw;
   justify-content: center;
   align-items: flex-start;
   text-align: center;
