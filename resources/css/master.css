@@ -423,10 +423,13 @@ z-index: 11;
   padding-left: 3rem;
   margin-right: 0;
 }
+.desknav a{
+  font-weight: bold;
+}
 .desknav a:hover{
   color: #ffc8ce;
 }
-  #index-bar{
+  i{
     display: none;
     visibility: hidden;
   }
