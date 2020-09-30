@@ -336,13 +336,12 @@ z-index: 11;
 .projectlist{
   margin: 0 auto;
   display: flex;
-  width: 80vw;
+  width: 80%;
   justify-content: center;
   align-items: flex-start;
   text-align: center;
   flex-wrap: wrap;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding: 10rem 3rem 10rem 3rem;
 }
 
 .projectitem{
@@ -355,10 +354,15 @@ z-index: 11;
   justify-content: center;
 
 }
+.project-text{
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
 
 .projectimg{
-  height: 250px;
-  width:auto;
+  height: 225px;
+  width: auto;
   padding-top: 1em;
   padding-bottom: 1em;
 }
